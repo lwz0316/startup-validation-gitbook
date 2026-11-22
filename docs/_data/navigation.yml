@@ -1,0 +1,36 @@
+- title: 课程首页
+  url: /index.html
+  key: index
+- title: 课程地图与入学诊断
+  url: /00-课程地图与入学诊断.html
+  key: map
+- title: 第 1 章：从点子到可验证机会
+  url: /01-从点子到可验证机会.html
+  key: 01
+- title: 第 2 章：细分市场与目标客户
+  url: /02-细分市场与目标客户.html
+  key: 02
+- title: 第 3 章：客户访谈与问题证据
+  url: /03-客户访谈与问题证据.html
+  key: 03
+- title: 第 4 章：价值主张与竞争策略
+  url: /04-价值主张与竞争策略.html
+  key: 04
+- title: 第 5 章：商业模式、获客与市场进入
+  url: /05-商业模式获客与市场进入.html
+  key: 05
+- title: 第 6 章：产品原型、团队与执行
+  url: /06-产品原型团队与执行.html
+  key: 06
+- title: 第 7 章：财务、融资与风险
+  url: /07-财务融资与风险.html
+  key: 07
+- title: 第 8 章：商业计划与路演验收
+  url: /08-商业计划与路演验收.html
+  key: 08
+- title: 实战工作表
+  url: /templates/工作表.html
+  key: worksheet
+- title: 术语表与复盘清单
+  url: /templates/术语表与复盘清单.html
+  key: glossary

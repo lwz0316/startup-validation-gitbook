@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="{{ '/index.html' | relative_url }}">
+          <span class="brand-mark">15.390</span>
+          <span class="brand-name">创业与商业验证</span>
+        </a>
+        <a class="github-link" href="https://github.com/lwz0316/startup-validation-gitbook" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </header>
+
+    <div class="page-shell">
+      <aside class="sidebar" aria-label="课程目录">
+        <div class="sidebar-title">学习路径</div>
+        <nav>
+          {% for item in site.data.navigation %}
+          <a class="nav-item{% if page.url == item.url %} is-active{% endif %}" href="{{ item.url | relative_url }}">
+            <span class="nav-dot"></span>{{ item.title }}
+          </a>
+          {% endfor %}
+        </nav>
+      </aside>
+
+      <main class="content-wrap">
+        <article class="content">
+          {{ content }}
+        </article>
+        <footer class="page-footer">
+          <a href="{{ '/index.html' | relative_url }}">返回课程首页</a>
+          <span>MIT 15.390 · 中文实践课程</span>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

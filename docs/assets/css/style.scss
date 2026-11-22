@@ -1,0 +1,72 @@
+---
+---
+
+$ink: #172033;
+$muted: #667085;
+$line: #e6eaf0;
+$blue: #2563eb;
+$blue-dark: #1746a2;
+$soft-blue: #eef4ff;
+$paper: #ffffff;
+$canvas: #f6f8fb;
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: $ink;
+  background: $canvas;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  line-height: 1.8;
+  font-size: 16px;
+}
+a { color: $blue; text-decoration: none; }
+a:hover { color: $blue-dark; text-decoration: underline; }
+.site-header { background: #101828; color: #fff; border-bottom: 1px solid rgba(255,255,255,.12); }
+.header-inner { max-width: 1240px; margin: 0 auto; min-height: 72px; padding: 0 28px; display: flex; align-items: center; justify-content: space-between; }
+.brand { color: #fff; display: inline-flex; align-items: center; gap: 12px; text-decoration: none; }
+.brand:hover { color: #fff; text-decoration: none; }
+.brand-mark { color: #9fc0ff; font-size: 13px; font-weight: 800; letter-spacing: .12em; }
+.brand-name { font-size: 18px; font-weight: 700; letter-spacing: .04em; }
+.github-link { color: #cbd5e1; font-size: 14px; }
+.github-link:hover { color: #fff; }
+.page-shell { max-width: 1240px; margin: 0 auto; padding: 34px 28px 64px; display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 42px; }
+.sidebar { position: sticky; top: 24px; align-self: start; max-height: calc(100vh - 48px); overflow-y: auto; padding: 8px 0; }
+.sidebar-title { color: #98a2b3; font-size: 12px; letter-spacing: .13em; font-weight: 800; text-transform: uppercase; margin: 0 0 14px 14px; }
+.sidebar nav { display: grid; gap: 3px; }
+.nav-item { color: #475467; display: flex; gap: 10px; align-items: flex-start; padding: 9px 12px; border-radius: 8px; font-size: 14px; line-height: 1.45; }
+.nav-item:hover { background: #eaf1ff; color: $blue-dark; text-decoration: none; }
+.nav-item.is-active { color: $blue-dark; background: $soft-blue; font-weight: 700; }
+.nav-dot { width: 6px; height: 6px; margin-top: 8px; flex: 0 0 6px; border-radius: 50%; background: #c4cdd9; }
+.is-active .nav-dot { background: $blue; }
+.content-wrap { min-width: 0; }
+.content { background: $paper; border: 1px solid $line; border-radius: 14px; padding: 48px 64px 60px; box-shadow: 0 10px 30px rgba(16,24,40,.04); }
+.content h1 { margin: 0 0 30px; font-size: clamp(30px, 4vw, 42px); line-height: 1.25; letter-spacing: -.025em; color: #101828; }
+.content h2 { margin: 42px 0 16px; padding-top: 10px; border-top: 1px solid $line; font-size: 24px; line-height: 1.35; color: #1d2939; }
+.content h3 { margin: 28px 0 10px; font-size: 18px; color: #344054; }
+.content p { margin: 0 0 16px; }
+.content ul, .content ol { padding-left: 1.55em; }
+.content li { margin: 5px 0; }
+.content blockquote { margin: 24px 0; padding: 14px 20px; color: #475467; background: #f8fafc; border-left: 4px solid #8fb4ff; border-radius: 0 8px 8px 0; }
+.content code { background: #f1f5f9; border-radius: 4px; padding: 2px 6px; font-size: .9em; }
+.content pre { overflow-x: auto; padding: 18px; border-radius: 9px; background: #101828; color: #e5e7eb; }
+.content pre code { padding: 0; background: none; }
+.content table { width: 100%; margin: 22px 0; border-collapse: collapse; display: block; overflow-x: auto; }
+.content th, .content td { min-width: 120px; padding: 10px 12px; border: 1px solid $line; text-align: left; vertical-align: top; }
+.content th { background: #f8fafc; font-weight: 700; }
+.content hr { border: 0; border-top: 1px solid $line; margin: 34px 0; }
+.page-footer { display: flex; justify-content: space-between; gap: 20px; padding: 20px 4px 0; color: $muted; font-size: 13px; }
+@media (max-width: 800px) {
+  .header-inner { min-height: 62px; padding: 0 18px; }
+  .brand-name { font-size: 16px; }
+  .page-shell { display: block; padding: 18px 14px 40px; }
+  .sidebar { position: static; max-height: none; margin-bottom: 18px; padding: 0; }
+  .sidebar nav { display: flex; overflow-x: auto; gap: 7px; padding-bottom: 5px; }
+  .nav-item { white-space: nowrap; padding: 8px 10px; background: #fff; border: 1px solid $line; }
+  .sidebar-title { margin: 0 0 8px 2px; }
+  .content { padding: 32px 22px 40px; border-radius: 11px; }
+  .content h1 { font-size: 30px; }
+  .content h2 { font-size: 21px; }
+  .page-footer { display: block; }
+  .page-footer span { display: block; margin-top: 8px; }
+}
