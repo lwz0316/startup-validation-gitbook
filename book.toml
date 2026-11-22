@@ -1,0 +1,11 @@
+[book]
+title = "MIT 15.390 创业与商业验证"
+authors = ["刘汶竹"]
+language = "zh"
+src = "mit-15-390-gitbook"
+
+[output.html]
+site-url = "/startup-validation-gitbook/"
+
+[build]
+build-dir = "book"
